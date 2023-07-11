@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 2rem;
+  border: #800080;
+}
+
+.details {
+  width: 25rem;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #616161;
+
+  text-align: center;
+}
+
+.terms-services {
+  color: #800080;
+}
+
+.check {
+  display: flex;
+}

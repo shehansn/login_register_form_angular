@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="details">
+    <h1>Login</h1>
+
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+      Email:
+      <app-text-input [control]="formcontrol.email" [showErrorsWhen]="isSubmitted" type="email" label="Email">
+      </app-text-input>
+      Password:
+      <app-text-input [control]="formcontrol.password" [showErrorsWhen]="isSubmitted" type="password" label="Password">
+      </app-text-input>
+
+      <app-default-button text="Login"></app-default-button>
+      <div class="register">
+        New user? &nbsp;
+        <a routerLink="/register" [queryParams]="{ returnUrl: returnUrl }">
+          Register here
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
